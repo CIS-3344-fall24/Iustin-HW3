@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url('tech.jpg');   /* image located in folder */
+    background-size: cover;     /* the image covers the whole page */
+    background-position: center;    /* centers the image */
+    background-repeat: no-repeat;   /* prevents the image from repeating */
+    background-attachment: fixed;   /* keeps the background image fixed as you scroll */
+}
+
+/* edit the Title in index.html */
+#title{
+    text-align: center;
+    font-size: 65px;
+    color: whitesmoke;
+    text-shadow: 4px 4px black;
+    animation: floatText 3s ease-in-out infinite;
+}
+
+/* make title float */
+@keyframes floatText{
+    0% {
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-2.4rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* edit the date */
+#event-date{
+    font-family: 'Georgia', serif;
+    font-size: 40px;
+    color: indianred;
+    text-shadow: 2px 2px black;
+    margin: 40px;
+}
+
+#location{
+    font-size: 30px;
+    color: papayawhip;
+    text-shadow: 1px 1px black;
+    margin: 40px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+#description{
+    font-size: 1.5rem;
+    max-width: 750px;
+    color: papayawhip;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    display: inline-block;
+    line-height: 2.2rem;
+}
+
+.btn{
+    padding: 3rem 3.5rem;
+    background: #0ef;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #0ef;
+    font-size: 1.3rem;
+    color: #323946;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    display: inline-block;
+    margin-left: 220px;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+/* register.html edit */
+
+#title2{
+    font-size: 40px;
+    color: whitesmoke;
+    text-shadow: 3px 2px black;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff; /* White background for form */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+label {
+    display: grid;
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold text for labels */
+    color: white;
+    text-shadow: 2px 1px black;
+}
+
+input, select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Increased font size for better readability */
+    margin-left: 10px;
+}
+
+.genderSelection {
+    display: list-item ;
+    margin-bottom: 10px; /* Reduced space below the gender options */
+}
+
+
+button {
+    padding: 1rem 2rem;
+    background: #0ef;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #0ef;
+    font-size: 1.3rem;
+    color: #323946;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+button:hover {
+    box-shadow: none;
+}
+
+/* Success.html edit*/
+#title3{
+    font-size: 40px;
+    color: whitesmoke;
+    text-shadow: 3px 2px black;
+}
+
+.paragraph{
+    color: whitesmoke;
+    font-size: 30px;
+    text-shadow: 2px 1px black;
+    margin-left: 25px;
+}
+
+.button2{
+    padding: 2rem 3.5rem;
+    background: #0ef;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #0ef;
+    font-size: 1.2rem;
+    color: #323946;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    display: inline-block;
+}
+
+.button2:hover{
+    box-shadow: none;
+}

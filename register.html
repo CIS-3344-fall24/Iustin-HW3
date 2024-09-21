@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+
+    <!--link `styles.css` here-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title2">Registration Form: </h1>
+
+<form action="Success.html" class="form">
+    <div class="fullName">
+        <label for="fname">Full Name: </label>
+        <input type="text"
+               id="fname"
+               name="fname"
+               placeholder="Enter Full Name"
+               required>
+    </div><br><br>
+
+    <div class="emailAdd">
+        <label for="email">E-mail Address: </label>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter E-mail Address"
+               required>
+    </div><br><br>
+
+    <div class="passw">
+        <label for="password">Password: </label>
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="Enter Password"
+               required>
+    </div><br><br>
+
+    <div class="phone#">
+        <label for="phone">Phone Number: </label>
+        <input type="tel"
+               id="phone"
+               name="phone"
+               placeholder="Enter Phone Number">
+    </div><br><br>
+
+    <div class="age#">
+        <label for="age">Age:</label>
+        <input type="number"
+               id="age"
+               name="age"
+               min="18"
+               max="99"
+               placeholder="Enter Your Age"
+               required>
+    </div><br><br>
+
+    <div class="genderSelection">
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other">
+    </div>
+
+    <div class="selection">
+        <label for="ticket">Select your country</label>
+        <select id="ticket"
+                name="ticket">
+                <!--select options-->
+                <option value="Regular">Regular</option>
+                <option value="VIP">VIP</option>
+                <option value="Student">Student</option>
+        </select>
+    </div><br><br>
+
+<!--A submit button labeled "Submit Registration"-->
+    <div class="button-container">
+        <a href="Success.html">
+            <button type="submit">Submit Registration</button>
+        </a>
+    </div>
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+<!--Ensure the form has proper validation using HTML5 attributes.-->
+<!--Upon submitting, the user is redirected to the success page (success.html).-->
